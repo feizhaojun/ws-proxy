@@ -7,7 +7,8 @@ const cmpts = {
   cainiao: 12538,
   pinduoduo: 5000,
   doudian: 13888,
-  kuaishou: 16888
+  kuaishou: 16888,
+  jingdong: 9113,
 }
 
 const create = (type) => {
