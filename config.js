@@ -1,3 +1,3 @@
 module.exports = {
-  ipAddr: '192.168.1.7'
+  ipAddr: '192.168.51.59'
 }
