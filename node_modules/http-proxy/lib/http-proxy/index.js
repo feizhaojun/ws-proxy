@@ -116,9 +116,9 @@ ProxyServer.prototype.onError = function (err) {
   // Remark: Replicate node core behavior using EE3
   // so we force people to handle their own errors
   //
-  if(this.listeners('error').length === 1) {
-    throw err;
-  }
+  // if(this.listeners('error').length === 1) {
+  //   throw err;
+  // }
 };
 
 ProxyServer.prototype.listen = function(port, hostname) {

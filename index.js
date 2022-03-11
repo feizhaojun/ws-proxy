@@ -13,11 +13,11 @@ const cmpts = {
 
 const create = (type) => {
   const proxy = new httpProxy.createProxyServer({ ws: true });
-  
+
   const proxyServer = http.createServer(function (req, res) {
     proxy.web(req, res);
   });
-  
+
   proxyServer.on("upgrade", function (req, socket, head) {
     const { pathname } = url.parse(req.url);
     if (pathname.indexOf("/") === 0) {
@@ -28,7 +28,7 @@ const create = (type) => {
       });
     }
   });
-  
+
   proxyServer.listen(cmpts[type]);
   console.log('Proxy', type, cmpts[type]);
 };
